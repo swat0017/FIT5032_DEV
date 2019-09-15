@@ -1,0 +1,51 @@
+﻿@model Car4Hire.Models.Car
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Car</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.carName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.carName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.carNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.carNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.carModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.carModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.registrationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.registrationDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
