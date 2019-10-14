@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Car4Hire.Utils;
+using Car4Hire.Models;
+
 
 namespace Car4Hire.Controllers
-{
+{[RequireHttps]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -26,5 +29,11 @@ namespace Car4Hire.Controllers
 
             return View();
         }
+       
+       
+
+              
+
     }
 }
+    
