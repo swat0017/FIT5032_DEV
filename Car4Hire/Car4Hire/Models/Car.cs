@@ -23,7 +23,7 @@ namespace Car4Hire.Models
         [Required]
         [StringLength(7)]
         [DisplayName("Car Number")]
-       
+        [RegularExpression(@"A -Za-z]\w{1,7}", ErrorMessage = "Should Start with a character")]
         public string carNumber { get; set; }
 
         [StringLength(10)]

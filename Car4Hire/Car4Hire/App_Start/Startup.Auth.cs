@@ -45,10 +45,10 @@ namespace Car4Hire
             // This is similar to the RememberMe option when you log in.
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
-            //Uncomment the following lines to enable logging in with third party login providers
-            app.UseMicrosoftAccountAuthentication(
-               clientId: "305059643693-gfgekfg4acokpe9cj3aongkcm42pjm9d.apps.googleusercontent.com",
-               clientSecret: "13SLnIEI8GkdGpqCaVtfLudm");
+            // Uncomment the following lines to enable logging in with third party login providers
+            //app.UseMicrosoftAccountAuthentication(
+            //    clientId: "",
+            //    clientSecret: "");
 
             //app.UseTwitterAuthentication(
             //   consumerKey: "",

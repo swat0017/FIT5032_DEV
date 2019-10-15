@@ -12,89 +12,76 @@
 {
     @Html.AntiForgeryToken()
     
-<div class="form-horizontal">
-    <h4>Car</h4>
-    <hr />
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(model => model.Id, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Id, new
-            {
-                htmlAttributes =
+    <div class="form-horizontal">
+        <h4>Car</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Id, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Id, new
+                {
+                    htmlAttributes =
 new { title = "This is where you type Id", @class = "form-control", tabindex = 1 }
-            })
-            @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+                })
+                @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
 
+            </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.carName, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.carName, new
-            {
-                htmlAttributes =
+        <div class="form-group">
+            @Html.LabelFor(model => model.carName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.carName, new
+                {
+                    htmlAttributes =
 new { title = "This is where you type car name", @class = "form-control", tabindex = 1 }
-            })
-            @Html.ValidationMessageFor(model => model.carName, "", new { @class = "text-danger" })
+                })
+                @Html.ValidationMessageFor(model => model.carName, "", new { @class = "text-danger" })
+               
+            </div>
+        </div>
 
+        <div class="form-group">
+            @Html.LabelFor(model => model.carNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.carNumber, new
+                 {
+                     htmlAttributes =
+ new { title = "This is where you type car number", @class = "form-control", tabindex = 1 }
+                 })
+                @Html.ValidationMessageFor(model => model.carNumber, "", new { @class = "text-danger" })
+               
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.carModel, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.carModel, new
+                 {
+                     htmlAttributes =
+ new { title = "This is where you type car model", @class = "form-control", tabindex = 1 }
+                 })
+                @Html.ValidationMessageFor(model => model.carModel, "", new { @class = "text-danger" })
+              
+            </div>
+        </div>
+
+       @*@ <div class="form-group">
+         //   @Html.LabelFor(model => model.registrationDate, htmlAttributes: new { @class = "control-label col-md-2" })
+          //  <div class="col-md-10">
+                @Html.EditorFor(model => model.registrationDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.registrationDate, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
         </div>
     </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.carNumber, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.carNumber, new
-             {
-                 htmlAttributes =
-new { title = "This is where you type car number", @class = "form-control", tabindex = 1 }
-             })
-            @Html.ValidationMessageFor(model => model.carNumber, "", new { @class = "text-danger" })
-
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.carModel, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.carModel, new
-             {
-                 htmlAttributes =
-new { title = "This is where you type car model", @class = "form-control", tabindex = 1 }
-             })
-            @Html.ValidationMessageFor(model => model.carModel, "", new { @class = "text-danger" })
-
-        </div>
-    </div>
-   
-    <div class="form-group">
-        @Html.LabelFor(model => model.registrationDate, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            <input class="datepicker" value="09/10/2019">
-          
-        </div>
-    </div>
-    @Scripts.Render("~/bundles/jquery")
-    <script src="~/Scripts/notify.min.js" defer></script>
-    <script src="~/Scripts/bootstrap-datepicker.min.js" defer></script>
-    <link href="~/Content/bootstrap-datepicker.css" rel="stylesheet" />
-    <script>
-        $(document).ready(function () {
-            $.notify("Testing on notify JS", "success");
-            $('.datepicker').datepicker({
-                format: 'dd/mm/yyyy',
-                todayHighlight: true
-            });
-        });
-    </script>
-
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Create" class="btn btn-default" />
-        </div>
-    </div>
-</div>
 }
 
 <div>

@@ -9,7 +9,6 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Car4Hire.Models;
-using Car4Hire.Utils;
 
 namespace Car4Hire.Controllers
 {
@@ -157,19 +156,7 @@ namespace Car4Hire.Controllers
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    String toEmail = model.Email;
-                    String subject = "User Account Successfully Registered";
-                    String contents = "Hi User,\n" +
-                        "Wecome to Car4Hire.\n Your account has been successfully registered\n\n With Warm Regards, \n Team Car4Hire";
-
-                    EmailSender es = new EmailSender();
-                    es.Send(toEmail, subject, contents);
                     
-                    
-
-                   // es.SendNewsletter(toEmail, subject, contents);
-
-
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);

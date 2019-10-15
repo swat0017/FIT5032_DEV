@@ -24,10 +24,9 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <li>@Html.ActionLink("Cars", "Index", "Cars")</li>
+                    <li>@Html.ActionLink("Cars", "Index", "Cars")</li>
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -41,7 +40,7 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-    <img src="~/C:\Users\swathy\source\repos\Car4Hire\Car4Hire\Images\great-ocean-road.jpg" />
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

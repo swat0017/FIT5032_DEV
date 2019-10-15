@@ -102,7 +102,4 @@ C:\Users\swathy\source\repos\Car4Hire\Car4Hire\obj\Debug\Car4Hire.csproj.CoreCom
 C:\Users\swathy\source\repos\Car4Hire\Car4Hire\obj\Debug\Car4Hire.csproj.CopyComplete
 C:\Users\swathy\source\repos\Car4Hire\Car4Hire\obj\Debug\Car4Hire.dll
 C:\Users\swathy\source\repos\Car4Hire\Car4Hire\obj\Debug\Car4Hire.pdb
-C:\Users\swathy\source\repos\Car4Hire\Car4Hire\bin\SendGrid.dll
-C:\Users\swathy\source\repos\Car4Hire\Car4Hire\bin\SendGrid.pdb
-C:\Users\swathy\source\repos\Car4Hire\Car4Hire\bin\SendGrid.xml
 C:\Users\swathy\source\repos\Car4Hire\Car4Hire\obj\Debug\Car4Hire.csprojAssemblyReference.cache
