@@ -21,9 +21,9 @@
         <th>
             @Html.DisplayNameFor(model => model.carModel)
         </th>
-        @*<th>
+        <th>
             @Html.DisplayNameFor(model => model.registrationDate)
-        </th>*@
+        </th>
         <th></th>
     </tr>
 
@@ -38,9 +38,9 @@
         <td>
             @Html.DisplayFor(modelItem => item.carModel)
         </td>
-       @* <td>
+       <td>
             @Html.DisplayFor(modelItem => item.registrationDate)
-        </td>*@
+        </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |

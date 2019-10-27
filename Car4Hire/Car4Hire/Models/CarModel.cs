@@ -27,6 +27,11 @@ namespace Car4Hire.Models
             modelBuilder.Entity<Car>()
                 .Property(e => e.carModel)
                 .IsFixedLength();
+            modelBuilder.Entity<Car>()
+                .Property(e => e.registrationDate)
+                ;
         }
+
+        public System.Data.Entity.DbSet<Car4Hire.Models.Image> Images { get; set; }
     }
 }
